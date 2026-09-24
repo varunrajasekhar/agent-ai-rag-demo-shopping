@@ -1,0 +1,672 @@
+{
+  "Zara": [
+    {
+      "product_id": "ZA-W-001",
+      "department": "women",
+      "name": "Relaxed Linen-Blend Shirt",
+      "category": "top",
+      "price": 59.9,
+      "color": "light blue",
+      "material": "linen blend",
+      "fit": "relaxed",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Relaxed office-ready shirt with lightweight linen-blend fabric.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "business casual",
+        "relaxed"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "ZA-W-002",
+      "department": "women",
+      "name": "High-Waist Straight Trousers",
+      "category": "pants",
+      "price": 69.9,
+      "color": "black",
+      "material": "viscose blend",
+      "fit": "straight",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "medium-high",
+      "description": "Clean straight-leg trousers designed for polished office outfits.",
+      "tags": [
+        "professional",
+        "office",
+        "polished",
+        "straight",
+        "comfortable"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "ZA-W-003",
+      "department": "women",
+      "name": "Soft Tailored Blazer",
+      "category": "blazer",
+      "price": 89.9,
+      "color": "sand",
+      "material": "viscose blend",
+      "fit": "relaxed",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Soft-structured blazer with enough room for comfortable all-day wear.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "relaxed",
+        "polished"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "ZA-M-001",
+      "department": "men",
+      "name": "Linen-Blend Office Shirt",
+      "category": "top",
+      "price": 59.9,
+      "color": "white",
+      "material": "linen blend",
+      "fit": "regular",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Breathable regular-fit shirt with a clean professional look.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "business casual"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "ZA-M-002",
+      "department": "men",
+      "name": "Comfort Straight Trousers",
+      "category": "pants",
+      "price": 69.9,
+      "color": "charcoal",
+      "material": "stretch blend",
+      "fit": "straight",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Straight office trousers with added stretch for long workdays.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "straight",
+        "stretch"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "ZA-M-003",
+      "department": "men",
+      "name": "Relaxed Tailored Blazer",
+      "category": "blazer",
+      "price": 99.9,
+      "color": "navy",
+      "material": "viscose blend",
+      "fit": "relaxed",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Relaxed tailored blazer built for professional outfits without feeling restrictive.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "relaxed"
+      ],
+      "source": "mock"
+    }
+  ],
+  "H&M": [
+    {
+      "product_id": "HM-W-001",
+      "department": "women",
+      "name": "Loose Cotton Poplin Shirt",
+      "category": "top",
+      "price": 29.99,
+      "color": "white",
+      "material": "cotton",
+      "fit": "loose",
+      "weight": "light",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Loose cotton shirt with a crisp office-ready look.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "cotton",
+        "office"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "HM-W-002",
+      "department": "women",
+      "name": "Wide-Leg Creased Pants",
+      "category": "pants",
+      "price": 39.99,
+      "color": "navy",
+      "material": "polyester blend",
+      "fit": "wide leg",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Wide-leg work pants with a polished crease and easy movement.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "wide leg",
+        "polished"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "HM-W-003",
+      "department": "women",
+      "name": "Single-Breasted Soft Blazer",
+      "category": "blazer",
+      "price": 54.99,
+      "color": "beige",
+      "material": "woven blend",
+      "fit": "regular",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "medium-high",
+      "description": "Simple office blazer with soft structure and easy layering.",
+      "tags": [
+        "professional",
+        "office",
+        "blazer",
+        "comfortable",
+        "layering"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "HM-M-001",
+      "department": "men",
+      "name": "Regular-Fit Cotton Shirt",
+      "category": "top",
+      "price": 29.99,
+      "color": "light blue",
+      "material": "cotton",
+      "fit": "regular",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Light cotton button-up suited to everyday office wear.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "cotton",
+        "office"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "HM-M-002",
+      "department": "men",
+      "name": "Slim-Fit Stretch Chinos",
+      "category": "pants",
+      "price": 34.99,
+      "color": "khaki",
+      "material": "cotton stretch",
+      "fit": "slim",
+      "weight": "medium",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Stretch chinos for polished casual offices and long workdays.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "stretch",
+        "smart casual"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "HM-M-003",
+      "department": "men",
+      "name": "Relaxed-Fit Blazer",
+      "category": "blazer",
+      "price": 69.99,
+      "color": "dark gray",
+      "material": "woven blend",
+      "fit": "relaxed",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Relaxed blazer that balances structure and comfort.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "relaxed"
+      ],
+      "source": "mock"
+    }
+  ],
+  "Shein": [
+    {
+      "product_id": "SH-W-001",
+      "department": "women",
+      "name": "Pleated Wide-Leg Work Pants",
+      "category": "pants",
+      "price": 31.0,
+      "color": "charcoal",
+      "material": "polyester blend",
+      "fit": "wide leg",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Wide-leg pleated trousers with easy movement and a polished look.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "wide leg"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "SH-W-002",
+      "department": "women",
+      "name": "Soft Draped Office Blouse",
+      "category": "top",
+      "price": 24.0,
+      "color": "cream",
+      "material": "polyester",
+      "fit": "relaxed",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Soft draped blouse for professional outfits with a relaxed feel.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "relaxed"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "SH-W-003",
+      "department": "women",
+      "name": "Open-Front Work Blazer",
+      "category": "blazer",
+      "price": 37.0,
+      "color": "black",
+      "material": "polyester blend",
+      "fit": "regular",
+      "weight": "light",
+      "style": "business",
+      "comfort": "medium-high",
+      "description": "Lightweight blazer for simple professional layering.",
+      "tags": [
+        "professional",
+        "office",
+        "blazer",
+        "lightweight"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "SH-M-001",
+      "department": "men",
+      "name": "Easy-Iron Office Shirt",
+      "category": "top",
+      "price": 26.0,
+      "color": "white",
+      "material": "cotton blend",
+      "fit": "regular",
+      "weight": "light",
+      "style": "business",
+      "comfort": "high",
+      "description": "Easy-care shirt designed for everyday professional wear.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "lightweight"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "SH-M-002",
+      "department": "men",
+      "name": "Stretch Tapered Work Pants",
+      "category": "pants",
+      "price": 33.0,
+      "color": "black",
+      "material": "stretch blend",
+      "fit": "tapered",
+      "weight": "medium",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Tapered work pants with stretch for mobility.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "stretch",
+        "tapered"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "SH-M-003",
+      "department": "men",
+      "name": "Soft Knit Blazer",
+      "category": "blazer",
+      "price": 45.0,
+      "color": "navy",
+      "material": "knit blend",
+      "fit": "regular",
+      "weight": "medium",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Soft knit blazer for an office-ready look with cardigan-like comfort.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "smart casual"
+      ],
+      "source": "mock"
+    }
+  ],
+  "Adidas": [
+    {
+      "product_id": "AD-W-001",
+      "department": "women",
+      "name": "Lightweight Woven Straight Pants",
+      "category": "pants",
+      "price": 70.0,
+      "color": "black",
+      "material": "recycled polyester",
+      "fit": "straight",
+      "weight": "light",
+      "style": "sport smart casual",
+      "comfort": "high",
+      "description": "Minimal straight pants suitable for relaxed or creative office settings.",
+      "tags": [
+        "comfortable",
+        "lightweight",
+        "office",
+        "straight",
+        "smart casual"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "AD-W-002",
+      "department": "women",
+      "name": "Clean Knit Polo Top",
+      "category": "top",
+      "price": 55.0,
+      "color": "navy",
+      "material": "knit polyester",
+      "fit": "regular",
+      "weight": "light",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Minimal knit polo for polished casual work environments.",
+      "tags": [
+        "comfortable",
+        "lightweight",
+        "office",
+        "smart casual",
+        "minimal"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "AD-W-003",
+      "department": "women",
+      "name": "Structured Track Blazer",
+      "category": "blazer",
+      "price": 95.0,
+      "color": "black",
+      "material": "recycled polyester",
+      "fit": "relaxed",
+      "weight": "light",
+      "style": "sport smart casual",
+      "comfort": "high",
+      "description": "Sport-inspired structured layer for modern casual offices.",
+      "tags": [
+        "comfortable",
+        "lightweight",
+        "office",
+        "blazer",
+        "modern"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "AD-M-001",
+      "department": "men",
+      "name": "Woven Straight Office Pants",
+      "category": "pants",
+      "price": 72.0,
+      "color": "black",
+      "material": "recycled polyester",
+      "fit": "straight",
+      "weight": "light",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Clean technical pants for modern casual offices.",
+      "tags": [
+        "comfortable",
+        "lightweight",
+        "office",
+        "straight",
+        "smart casual"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "AD-M-002",
+      "department": "men",
+      "name": "Performance Polo Shirt",
+      "category": "top",
+      "price": 50.0,
+      "color": "white",
+      "material": "performance polyester",
+      "fit": "regular",
+      "weight": "light",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Breathable performance polo for casual professional settings.",
+      "tags": [
+        "comfortable",
+        "lightweight",
+        "office",
+        "polo",
+        "smart casual"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "AD-M-003",
+      "department": "men",
+      "name": "Minimal Travel Blazer",
+      "category": "blazer",
+      "price": 110.0,
+      "color": "navy",
+      "material": "stretch polyester",
+      "fit": "regular",
+      "weight": "light",
+      "style": "smart casual",
+      "comfort": "high",
+      "description": "Stretch travel blazer designed for mobility and modern workwear.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "blazer"
+      ],
+      "source": "mock"
+    }
+  ],
+  "Mango": [
+    {
+      "product_id": "MA-W-001",
+      "department": "women",
+      "name": "Linen-Blend Straight Trousers",
+      "category": "pants",
+      "price": 69.99,
+      "color": "stone",
+      "material": "linen blend",
+      "fit": "straight",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Clean tailored trousers with lightweight linen-blend fabric.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "linen",
+        "office"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "MA-W-002",
+      "department": "women",
+      "name": "Flowy Button-Up Shirt",
+      "category": "top",
+      "price": 49.99,
+      "color": "cream",
+      "material": "viscose",
+      "fit": "relaxed",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Flowy office shirt with a relaxed silhouette.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "office",
+        "relaxed"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "MA-W-003",
+      "department": "women",
+      "name": "Unstructured Suit Blazer",
+      "category": "blazer",
+      "price": 99.99,
+      "color": "navy",
+      "material": "viscose blend",
+      "fit": "relaxed",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Unstructured blazer for a polished outfit with less stiffness.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "relaxed"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "MA-M-001",
+      "department": "men",
+      "name": "Linen-Blend Regular Shirt",
+      "category": "top",
+      "price": 59.99,
+      "color": "sky blue",
+      "material": "linen blend",
+      "fit": "regular",
+      "weight": "light",
+      "style": "business casual",
+      "comfort": "high",
+      "description": "Breathable shirt for warm professional environments.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "lightweight",
+        "linen",
+        "office"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "MA-M-002",
+      "department": "men",
+      "name": "Travel Suit Trousers",
+      "category": "pants",
+      "price": 79.99,
+      "color": "navy",
+      "material": "stretch blend",
+      "fit": "straight",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Stretch tailored trousers designed for comfortable long days.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "stretch",
+        "tailored"
+      ],
+      "source": "mock"
+    },
+    {
+      "product_id": "MA-M-003",
+      "department": "men",
+      "name": "Comfort Suit Blazer",
+      "category": "blazer",
+      "price": 119.99,
+      "color": "charcoal",
+      "material": "stretch blend",
+      "fit": "regular",
+      "weight": "medium",
+      "style": "business",
+      "comfort": "high",
+      "description": "Flexible suit blazer for polished work outfits.",
+      "tags": [
+        "professional",
+        "comfortable",
+        "office",
+        "blazer",
+        "stretch"
+      ],
+      "source": "mock"
+    }
+  ]
+}

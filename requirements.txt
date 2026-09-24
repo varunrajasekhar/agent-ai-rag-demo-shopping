@@ -1,0 +1,8 @@
+deepagents
+langchain_ollama
+langchain
+dotenv
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers
+firecrawl-py>=4.44.0
