@@ -24,12 +24,16 @@ SHOPPER_INSTRUCTIONS = """
     Tool Rule:
     For every request that asks to find, search, compare, show, recommend or suggest products,
     you must call the 'search_products' Python tool.
+    Use only product records returned by the tool. Never invent or supplement retailer names,
+    products, prices, colors, materials, or product details. If a retailer is unsupported, say so.
+    Omit filters the user did not request. If the user asks for both men and women, search both
+    departments even if ACTIVE_SHOPPING_DEPARTMENT names only one.
 
     Do NOT:
     - print JSON pretending to call the tool
     - tell the user what parameters you would use
     - answer from memory
-    Actaully invoke 'search_products' with the correct parameters and return the results to the user.
+    Actually invoke 'search_products' with the correct parameters and return the results to the user.
 """
 
 agent = create_deep_agent(
