@@ -1,44 +1,60 @@
 from deepagents import (
-    create_deep_agent, 
     GeneralPurposeSubagentProfile,
-    HarnessProfile, 
-    register_harness_profile)
+    HarnessProfile,
+    create_deep_agent,
+    register_harness_profile,
+)
 from langchain_ollama import ChatOllama
-from rag import search_fashion_knowledge_base
+
 from tools import search_products
-register_harness_profile("ollama", HarnessProfile(
-    general_purpose_subagent=GeneralPurposeSubagentProfile(enabled=False)
-))
 
-MODEL_NAME = "llama3.2:3b"
 
-Model = ChatOllama(model=MODEL_NAME, temperature=0)
+register_harness_profile(
+    "ollama",
+    HarnessProfile(
+        general_purpose_subagent=GeneralPurposeSubagentProfile(enabled=False)
+    ),
+)
+
+MODEL_NAME = "qwen2.5:7b"
+model = ChatOllama(model=MODEL_NAME, temperature=0)
 
 SHOPPER_INSTRUCTIONS = """
-    You are a personal shopping agent working with small mock data as a json.
-    The user provides the current shopping department:
-    ACTIVE_SHOPPING_DEPARTMENT: women
-    or 
-    ACTIVE_SHOPPING_DEPARTMENT: men
+You are a personal shopping assistant.
 
-    Tool Rule:
-    For every request that asks to find, search, compare, show, recommend or suggest products,
-    you must call the 'search_products' Python tool.
-    Use only product records returned by the tool. Never invent or supplement retailer names,
-    products, prices, colors, materials, or product details. If a retailer is unsupported, say so.
-    Omit filters the user did not request. If the user asks for both men and women, search both
-    departments even if ACTIVE_SHOPPING_DEPARTMENT names only one.
+The user's message contains ACTIVE_SHOPPING_DEPARTMENT: women or men.
 
-    Do NOT:
-    - print JSON pretending to call the tool
-    - tell the user what parameters you would use
-    - answer from memory
-    Actually invoke 'search_products' with the correct parameters and return the results to the user.
+For a product-shopping request, call search_products exactly once. Pass:
+- stores: exactly the retailer or retailers named by the shopper
+- product_type: the literal category, such as shirt, pants, or blazer
+- shopper_request: the shopper's complete original request
+- department: the active shopping department
+- max_price: the maximum price supplied by the shopper, if any
+
+search_products internally performs:
+RAG retrieval -> two product-specific search keywords -> retailer adapter ->
+two Firecrawl searches -> US URL and product-category validation ->
+optional product-page price verification -> up to five balanced candidates ->
+three final products.
+
+Rules:
+- Never create or rewrite the RAG keywords yourself.
+- Never change the requested product type or retailer.
+- Do not print or simulate a tool call. Actually call the tool and wait.
+- Recommend only products returned in the products array.
+- Copy every URL exactly. Never invent or rewrite products, URLs, or prices.
+- If max_price is supplied, it is a hard constraint. Every returned product
+  has a verified current price at or below that amount.
+- If fewer than three products return, show only those products.
+- Never substitute dresses, skirts, children's items, search-result pages, or
+  products from another retailer.
+
+For each product show its name, retailer, verified price when returned, matched
+RAG keyword, why it may match using only returned information, and direct URL.
 """
 
 agent = create_deep_agent(
-    model=Model,
-    tools = [search_products, search_fashion_knowledge_base],
+    model=model,
+    tools=[search_products],
     system_prompt=SHOPPER_INSTRUCTIONS,
 )
-
