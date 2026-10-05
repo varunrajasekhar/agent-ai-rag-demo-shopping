@@ -13,6 +13,7 @@ MAX_PRODUCTS_PER_SEARCH = 3
 CANDIDATE_POOL_SIZE = 5
 
 
+
 def _normalize_stores(stores) -> list[str]:
     """Accept either a Python list or a JSON list produced by a local model."""
     if isinstance(stores, str):
@@ -30,7 +31,6 @@ def search_products(
     stores: list,
     product_type: str,
     shopper_request: str,
-    department: str,
     max_price: Optional[float] = None,
 ) -> str:
     """Search two RAG angles and select three balanced products.
@@ -41,13 +41,16 @@ def search_products(
         department: The active department, either "women" or "men".
         max_price: Optional hard maximum price in US dollars.
     """
+
+
     stores = _normalize_stores(stores)
 
     # Python owns this handoff, so the LLM cannot rewrite the RAG keywords.
     rag_plan = build_fashion_search_plan(shopper_request, product_type)
     normalized_product_type = rag_plan["product_type"]
     rag_keywords = rag_plan["search_keywords"][:RAG_KEYWORDS_TO_SEARCH]
-   
+    department = os.getenv("ACTIVE_SHOPPING_DEPARTMENT","").strip().lower()
+    print(f'selected department {department}')
     api_key = os.getenv("FIRECRAWL_API_KEY")
     if not api_key:
         return json.dumps(
