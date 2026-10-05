@@ -57,7 +57,7 @@ cp .env.example .env
 Put your Firecrawl key in `.env`:
 
 ```env
-FIRECRAWL_API_KEY=fc-da5fafb2a06241a693214be3f07cd3ed
+FIRECRAWL_API_KEY=
 ```
 
 Make sure Ollama is running and install the model:
